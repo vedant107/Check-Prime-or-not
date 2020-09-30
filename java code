@@ -1,0 +1,37 @@
+package primeTest;
+
+import java.util.Scanner;
+
+public class PrimeTest {
+
+	public static void main(String[] args) {
+		int i;
+
+		Scanner sc = new Scanner(System.in);
+		int num = sc.nextInt();
+		
+		boolean isPrime = false;
+		for( i=2;i<=num/2;i++);
+		{
+			//Condition for nonPrime
+			if (num%i==0)	
+			{
+				isPrime = true;
+				break;
+				
+			}
+			
+		}
+		
+		if (isPrime) {
+			
+		System.out.println(num+"is a prime no");	
+		}
+		else {
+			System.out.println(num+" is not prime no");
+		}
+	}
+}
+
+29 
+is not a prime number
